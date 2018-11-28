@@ -120,7 +120,9 @@ set wildmenu
 
 
 " 配色方案
-colorscheme herald
+set t_Co=256
+set background=dark
+colorscheme solarized
 
 " >>
 " 营造专注气氛
@@ -402,6 +404,18 @@ let NERDTreeDirArrows=2
 
 " fix missing first character in tree structure
 let NERDTreeNodeDelimiter = "\t"
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 " <<
 
